@@ -30,12 +30,16 @@
             color: #e91e63;
             cursor: pointer;
         }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
     </style>
     <script>
         function mostrarBio() {
             document.getElementById("bio").style.display = "block";
-            // Quitar el enlace para que no se pueda volver a hacer clic
-            document.getElementById("link").style.pointerEvents = "none";
+            document.getElementById("link").style.pointerEvents = "none"; // Desactivar el enlace
         }
     </script>
 </head>
@@ -50,6 +54,8 @@
             y soy fundadora de <strong>OverSwim</strong>, un proyecto que busca motivar y enseñar  
             la natación como una herramienta de superación personal.
         </p>
+        <a href="javascript:history.back()" class="back-link">⬅ Volver atrás</a>
     </div>
 </body>
 </html>
+
